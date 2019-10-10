@@ -1,7 +1,6 @@
 <template>
   <section>
-    <h2>Hey there!</h2>
-    <h1>My name is {{ name }}</h1>
+    <h2 v-text="title"></h2>
   </section>
 </template>
 
@@ -9,7 +8,7 @@
 export default {
   data() {
     return {
-      name: "Padi mi"
+      title: "THE CODE LION"
     };
   }
 };
@@ -20,7 +19,7 @@ export default {
 
 section {
   width: 100%;
-  height: 60vw;
+  height: 30vw;
   overflow: hidden;
   background: -moz-radial-gradient(
       center,
@@ -29,7 +28,7 @@ section {
       rgba(0, 0, 0, 0) 37%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url("/lake-photo.jpg") no-repeat center center scroll; /* FF3.6-15 */
+    url("/lion.jpg") no-repeat center center scroll; /* FF3.6-15 */
   background: -webkit-radial-gradient(
       center,
       ellipse cover,
@@ -37,16 +36,16 @@ section {
       rgba(0, 0, 0, 0) 37%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url("/lake-photo.jpg") no-repeat center center scroll; /* Chrome10-25,Safari5.1-6 */
+    url("/lion.jpg") no-repeat center center scroll; /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(
       ellipse at center,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0) 37%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url("/lake-photo.jpg") no-repeat center center scroll; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    url("/lion.jpg") no-repeat center center scroll; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-size: cover;
-  color: #333;
+  color: #FFF;
   h1 {
     margin-top: 0.5em;
     @include fluid-type(font-size, 320px, 1366px, 30px, 100px);
